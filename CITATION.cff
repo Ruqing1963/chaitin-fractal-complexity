@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "Uncomputable Fractal Dimensions and the Chaitin Barrier: code, data and figures"
+authors:
+  - family-names: Chen
+    given-names: Ruqing
+    affiliation: "GUT Geoservice Inc., Montreal"
+    email: ruqing@hotmail.com
+repository-code: "https://github.com/Ruqing1963/chaitin-fractal-complexity"
+doi: 10.5281/zenodo.23194419
+date-released: 2026-10-06
+license: MIT
+keywords:
+  - algorithmic information theory
+  - Kolmogorov complexity
+  - Chaitin's Omega
+  - computable analysis
+  - fractal dimension
+  - undecidability
+  - binary lambda calculus
+preferred-citation:
+  type: article
+  title: "Uncomputable Fractal Dimensions, Kolmogorov Complexity Cascades, and the Chaitin Barrier in Physical Systems"
+  authors:
+    - family-names: Chen
+      given-names: Ruqing
+      affiliation: "GUT Geoservice Inc., Montreal"
+  year: 2026
+  doi: 10.5281/zenodo.23194419

@@ -1,0 +1,67 @@
+Part A: toy halting probability of binary lambda calculus
+   len   #closed  #normalised  #undecided   lower bound
+     4         1           1           0   0.0625000000
+     6         1           1           0   0.0781250000
+     7         1           1           0   0.0859375000
+     8         2           2           0   0.0937500000
+     9         1           1           0   0.0957031250
+    10         6           6           0   0.1015625000
+    11         5           5           0   0.1040039062
+    12        13          13           0   0.1071777344
+    13        14          14           0   0.1088867188
+    14        37          37           0   0.1111450195
+    15        44          44           0   0.1124877930
+    16       101         101           0   0.1140289307
+    17       134         134           0   0.1150512695
+    18       298         297           1   0.1161842346
+    19       431         431           0   0.1170063019
+    20       883         882           1   0.1178474426
+    21      1361        1361           0   0.1184964180
+    22      2736        2729           7   0.1191470623
+    23      4405        4405           0   0.1196721792
+    24      8574        8549          25   0.1201817393
+   Omega_BLC in [0.1201817393, 1.0000000000]
+   lower = 0.000111101100010000111011...  upper = 0.200000000000000000000000...
+   certified leading bits: 0
+
+Part B: compressed size minus empty-bitmap baseline (1664 bits), and box dimension
+  (1) self-similar r=1/4 (computable)
+     level  1: L=  1.39  N=      2  LZMA=      96 bits  D_box=nan  D_theory(level)=0.500
+     level  2: L=  2.77  N=      4  LZMA=     192 bits  D_box=nan  D_theory(level)=0.500
+     level  3: L=  4.16  N=      8  LZMA=     256 bits  D_box=0.500  D_theory(level)=0.500
+     level  4: L=  5.55  N=     16  LZMA=     384 bits  D_box=0.500  D_theory(level)=0.500
+     level  5: L=  6.93  N=     32  LZMA=     576 bits  D_box=0.476  D_theory(level)=0.500
+     level  6: L=  8.32  N=     64  LZMA=     928 bits  D_box=0.500  D_theory(level)=0.500
+     level  7: L=  9.70  N=    128  LZMA=     960 bits  D_box=0.500  D_theory(level)=0.500
+     level  8: L= 11.09  N=    256  LZMA=     960 bits  D_box=0.500  D_theory(level)=0.500
+     level  9: L= 12.48  N=    512  LZMA=     992 bits  D_box=0.494  D_theory(level)=0.500
+     level 10: L= 13.86  N=   1024  LZMA=     992 bits  D_box=0.495  D_theory(level)=0.500
+     level 11: L= 15.25  N=   2048  LZMA=     992 bits  D_box=0.496  D_theory(level)=0.500
+  (2) r_k from Omega_k: D = 1/4 + Omega/2 (computable approx.)
+     level  1: L=  2.46  N=      2  LZMA=     128 bits  D_box=nan  D_theory(level)=0.281
+     level  2: L=  4.93  N=      4  LZMA=     256 bits  D_box=0.375  D_theory(level)=0.281
+     level  3: L=  7.33  N=      8  LZMA=     448 bits  D_box=0.360  D_theory(level)=0.284
+     level  4: L=  9.69  N=     16  LZMA=     576 bits  D_box=0.320  D_theory(level)=0.286
+     level  5: L= 12.03  N=     32  LZMA=     928 bits  D_box=0.319  D_theory(level)=0.288
+     level  6: L= 14.35  N=     64  LZMA=     896 bits  D_box=0.310  D_theory(level)=0.290
+  (3) random bit per level (stand-in for Omega bits)
+     level  1: L=  2.30  N=      2  LZMA=      96 bits  D_box=nan  D_theory(level)=0.301
+     level  2: L=  3.69  N=      4  LZMA=     256 bits  D_box=0.792  D_theory(level)=0.376
+     level  3: L=  5.99  N=      8  LZMA=     544 bits  D_box=0.494  D_theory(level)=0.347
+     level  4: L=  7.38  N=     16  LZMA=     832 bits  D_box=0.486  D_theory(level)=0.376
+     level  5: L=  9.68  N=     32  LZMA=     896 bits  D_box=0.435  D_theory(level)=0.358
+     level  6: L= 11.07  N=     64  LZMA=    1600 bits  D_box=0.422  D_theory(level)=0.376
+     level  7: L= 13.37  N=    128  LZMA=    1920 bits  D_box=0.404  D_theory(level)=0.363
+  (4) random bit per interval
+     level  1: L=  2.30  N=      2  LZMA=      96 bits  D_box=nan  D_theory(level)=0.301
+     level  2: L=  4.61  N=      4  LZMA=     256 bits  D_box=0.534  D_theory(level)=0.301
+     level  3: L=  6.45  N=      8  LZMA=     544 bits  D_box=0.431  D_theory(level)=0.322
+     level  4: L=  8.18  N=     16  LZMA=     928 bits  D_box=0.422  D_theory(level)=0.339
+     level  5: L=  9.74  N=     32  LZMA=    1440 bits  D_box=0.431  D_theory(level)=0.356
+     level  6: L= 11.58  N=     64  LZMA=    2304 bits  D_box=0.422  D_theory(level)=0.359
+     level  7: L= 13.43  N=    128  LZMA=    2976 bits  D_box=0.416  D_theory(level)=0.361
+
+Illustrative Chaitin constant c_F ~ 237300 bits (7910-state TM, ~15 bits per transition).
+For the random-per-interval set (D~0.36), K ~ e^(D L) exceeds c_F at L* ~ 34.5, i.e. eps* ~ e^-L* = 1.0e-15 of the system size.
+Planck cutoff for a 1 m system: L_P = ln(1 m / 1.6e-35 m) = 80.1
+figures written to figures/, data to data/

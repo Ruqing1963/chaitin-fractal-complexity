@@ -1,0 +1,9 @@
+# (2) r_k from Omega_k: D = 1/4 + Omega/2 (computable approx.)
+# raster 2^22 pixels; LZMA preset 9|extreme; empty-bitmap baseline 1664 bits subtracted
+level,L,n_intervals,lzma_bits_above_baseline,D_box,D_theory_level
+1,2.464523309,2,128,nan,0.28125
+2,4.929046617,4,256,0.3754887502,0.28125
+3,7.326961188,8,448,0.3598441573,0.2838068182
+4,9.692903564,16,576,0.319623714,0.2860431556
+5,12.02771512,32,928,0.3193875822,0.2881458256
+6,14.35487156,64,896,0.309857811,0.2897192822

@@ -1,0 +1,3 @@
+# illustrative c_F = 7910 states x 2 transitions x ~15 bits (Yedidia-Aaronson 2016)
+c_F_bits,D_random_node,L_star,eps_star,L_Planck_1m
+237300,0.3587898861,34.49673729,1.042935266e-15,80.11052429
